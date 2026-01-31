@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>DrugFreeInu.codes</title>
+
+  <style>
+    body {
+      background: #0b0b0b;
+      color: #eaeaea;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      padding: 2rem;
+      line-height: 1.5;
+    }
+
+    h1 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .line {
+      display: block;
+      cursor: pointer;
+      padding: 0.15rem 0.25rem;
+    }
+
+    .line:hover {
+      background: rgba(255,255,255,0.05);
+    }
+
+    .explain {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.25s ease;
+      color: #9aa4b2;
+      margin-left: 1.25rem;
+      font-size: 0.9em;
+    }
+
+    .line.active + .explain {
+      max-height: 6rem;
+      opacity: 1;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>DrugFreeInu.codes</h1>
+
+<pre>
+<span class="line">/* This site exists to explain code line-by-line, not hide behind abstractions. */</span>
+<div class="explain">
+This line states the purpose of the entire site so there is no ambiguity about intent.
+</div>
+
+<span class="line">const siteName = "DrugFreeInu.codes";</span>
+<div class="explain">
+Defines the name once so it stays consistent everywhere and avoids duplication.
+</div>
+
+<span class="line">const principle = "Transparency over magic";</span>
+<div class="explain">
+Captures the core value: code should explain itself instead of appearing mysterious.
+</div>
+
+<span class="line">document.body.dataset.ready = "true";</span>
+<div class="explain">
+Marks that the document has loaded and is intentionally minimal.
+</div>
+
+<span class="line">/* Every clickable line reveals why it exists in one sentence. */</span>
+<div class="explain">
+This comment explains the interaction pattern used across the entire site.
+</div>
+</pre>
+
+<script>
+  document.querySelectorAll('.line').forEach(line => {
+    line.addEventListener('click', () => {
+      line.classList.toggle('active');
+    });
+  });
+</script>
+
+</body>
+</html>
